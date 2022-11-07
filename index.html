@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src = "countries.js" async></script>
+    </head>
+        <body>
+            <div id="section1">
+            <br>
+                <h3 class="text-center" ><b>Welcome to 'Countries.com'!</b></h3>
+            <br>
+                <p class = "text-center">Our website can display basic information on the countries in our database</p>
+                <p class = "text-center">Enter the name of the country you'd like to view below, then hit display!</p>
+            <br>
+            </div>
+            <br>
+            <div class = "text-center">
+                <select  id="selectCountry">
+                    <option value="United States of America">United States of America</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Romania">Romania</option>
+                    <option value="China">China</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Empire of Antarctica">Empire of Antarctica</option>
+                </select>
+                <button type="button" class="btn-primary" value="submit" onclick="DisplayCountry(document.getElementById('selectCountry').value)">Display</button>
+            </div>
+            <br>
+            <div id ="section2">
+                <ul id="listInfo">
+                </ul>
+            </div>
+            <div class = "text-center" id="img-container">
+            </div>
+            <br>
+            <br>
+            <div id="section3">
+                <p class = "text-center">The information on your country should appear just above this text!</p>
+                <p class = "text-center">If it doesn't exist in our database, it'll also tell you that.</p>
+                <p class = "text-center">Keep trying different countires until you find one we have info on!</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </body>
+</html>
